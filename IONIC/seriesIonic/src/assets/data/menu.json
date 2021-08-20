@@ -1,0 +1,86 @@
+[
+  {
+  "icon": "flash-outline",
+  "name": "Acción",
+  "redirectTo": "/categorias/accion",
+    "value": "accion",
+    "img":"../../assets/img/john-wick-skip.png"
+  },
+  {
+    "icon": "sad-outline",
+    "name": "Drama",
+    "redirectTo": "/categorias/drama",
+    "value": "drama",
+    "img": "../../assets/img/breaking_bad_1118.jpg"
+  },
+  {
+    "icon": "color-filter-outline",
+    "name": "Fantasía",
+    "redirectTo": "/categorias/fantasia",
+    "value": "fantasia",
+    "img": "../../assets/img/Targaryen-GOT.jpg"
+  },
+  {
+    "icon": "happy-outline",
+    "name": "Comedia",
+    "redirectTo": "/categorias/comedia",
+    "value": "comedia",
+    "img": "../../assets/img/boys.jpg"
+  },
+  {
+    "icon": "accessibility-outline",
+    "name": "Animación",
+    "redirectTo": "/categorias/animacion",
+    "value": "animacion",
+    "img": "../../assets/img/animacion.jpg"
+  },
+  {
+    "icon": "bonfire-outline",
+    "name": "Aventura",
+    "redirectTo": "/categorias/aventura",
+    "value": "aventura",
+    "img": "../../assets/img/locke.jpg"
+  },
+  {
+    "icon": "search-circle-outline",
+    "name": "Thriller",
+    "redirectTo": "/categorias/thriller",
+    "value": "thriller",
+    "img": "../../assets/img/hannibal.jpg"
+  },
+  {
+    "icon": "skull-outline",
+    "name": "Terror",
+    "redirectTo": "/categorias/terror",
+    "value": "terror",
+    "img": "../../assets/img/kirlian.jpg"
+  },
+  {
+    "icon": "hand-right-outline",
+    "name": "Medievo",
+    "redirectTo": "/categorias/medievo",
+    "value": "medievo",
+    "img": "../../assets/img/lotr.jpg"
+  },
+  {
+    "icon": "rocket-outline",
+    "name": "Ciencia Ficción",
+    "redirectTo": "/categorias/ciencia ficcion",
+    "value": "ciencia ficcion",
+    "img": "../../assets/img/arrival.jpg"
+  },
+  {
+    "icon": "earth-outline",
+    "name": "Documental",
+    "redirectTo": "/categorias/documental",
+    "value": "documental",
+    "img": "../../assets/img/NuestroPlaneta.jpg"
+  },
+  {
+    "icon": "heart-outline",
+    "name": "Romance",
+    "redirectTo": "/categorias/romance",
+    "value": "romance",
+    "img": "../../assets/img/li.jpg"
+  }
+]

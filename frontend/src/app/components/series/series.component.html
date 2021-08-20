@@ -1,0 +1,103 @@
+
+
+<div class="container blue-grey" style="opacity: 0.95; height: auto">
+  <div class="row">
+    <div class="col s12 m12 center">
+    <div class="card">
+      <div class="card-title">
+        <H3> Insertar Serie </H3>
+      </div>
+      <div class="card-content">
+       <form #serieForm="ngForm" (ngSubmit)="addSerie(serieService.selectedSerie, serieForm)">
+         <input type="hidden" name="_id" #_id=ngModel [(ngModel)]="serieService.selectedSerie._id">
+         <div class="row">
+           <div class="input-field col s12">
+            <input type="text" name="titulo" #titulo="ngModel" [(ngModel)]="serieService.selectedSerie.titulo" placeholder="Introduce el título de la serie" >
+             <input type="number" name="capitulos" #capitulos="ngModel" [(ngModel)]="serieService.selectedSerie.capitulos" placeholder="Introduce el numero de capitulos" >
+             <input type="number" name="anyo" #anyo="ngModel" [(ngModel)]="serieService.selectedSerie.anyo" placeholder="Introduce el año de la serie" >
+             <input type="text" name="sinopsis" #sinopsis="ngModel" [(ngModel)]="serieService.selectedSerie.sinopsis" placeholder="Escribe la sinopsis">
+             <div class="row">
+               <div class="col s10">
+                 <label>
+                   <input type="text" name="imagenes" #imagenes="ngModel" [(ngModel)]="myImagen" placeholder="Inserta URL de las imágenes">
+                   <p>
+                     <b class="left">URL de imágenes:  </b><span *ngFor="let c of serieService.selectedSerie.imagenes">
+                     {{c}} </span>
+                   </p>
+                 </label>
+               </div>
+               <div class="col s2">
+                 <span class="btn" (click)="addImagen()">+</span>
+                 &nbsp;&nbsp;
+                 <span class="btn red" (click)="deleteImagen()">-</span>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col s12">
+                 <label for="options">
+
+                   <p class="left">Selecciona las categorías pertinentes</p>
+                   <br/>
+                   <select id="options" [(ngModel)]="selectedOption" name="selectedOption" multiple="true">
+                     <option *ngFor="let option of options" [ngValue]="option">{{option}}</option>
+                   </select>
+                   <br/>
+
+
+                   <p>
+                     <b class="left">Categorías añadidas:  </b><span *ngFor="let c of serieService.selectedSerie.categorias">
+                     {{c}} </span>
+                   </p>
+                   <br/>
+                   <br/>
+                 </label>
+               </div>
+                 <div class="card-panel">
+                   <br/> <br/> <br/> <br/> <br/>
+                   <span class="btn left" aria-expanded="true" (click)="addCategoria()">ADD</span>
+                   &nbsp;&nbsp;
+                   <span class="btn red right" aria-expanded="true" (click)="deleteCategoria()">DELETE</span>
+                 </div>
+             </div>
+           </div>
+             <div class="card-action">
+               <div class="input-field-col-s12">
+                 <button class="btn right"  (click)="resetForm(serieForm)"> Clean </button>
+                 <button type="submit" class="btn left"> Save </button>
+               </div>
+             </div>
+         </div>
+       </form>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col s12 m12 center">
+    <div class="card">
+      <div class="card-title">
+        <h3>Lista de Series</h3>
+      </div>
+      <div class="card-content">
+      <ul class="left-align">
+        <li *ngFor="let serie of serieService.series">
+          <h5>{{serie.titulo}}
+          <a class="cursor right" (click)="editSerie(serie)">
+            <i class="label-icon">Edit</i>
+          </a>
+          <a class="cursor right" (click)="deleteSerie(serie._id)">
+            <i class="label-icon">Delete&nbsp;&nbsp;</i>
+
+          </a>
+          </h5>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+

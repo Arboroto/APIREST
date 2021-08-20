@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="880ed667-2829-4076-8660-2614692f5efe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tslint.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="API_MEAN" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+  </component>
+  <component name="ProjectId" id="1ncLuZ0g7NI98kbvdHon79CLb8d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../WebFinalCurso 2" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Users\Alberto\Desktop\DAM\2\SERIES\API_MEAN\IONIC\seriesIonic\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alberto\Desktop\DAM\2\SERIES\API_MEAN\frontend\src\app" />
+      <recent name="C:\Users\Alberto\Desktop\DAM\2\SERIES\API_MEAN\frontend" />
+      <recent name="C:\Users\Alberto\Desktop\DAM\2\SERIES\API_MEAN\frontend\src\assets" />
+      <recent name="C:\Users\Alberto\Desktop\DAM\2\SERIES\API_MEAN\frontend\src\images" />
+      <recent name="C:\Users\Alberto\Desktop\DAM\2\SERIES\API_MEAN\server\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alberto\Desktop\DAM\2\SERIES\API_MEAN\IONIC\seriesIonic\src\assets\img" />
+      <recent name="C:\Users\Alberto\Desktop\DAM\2\SERIES\API_MEAN\IONIC\seriesIonic\src\app\models" />
+      <recent name="C:\Users\Alberto\Desktop\DAM\2\SERIES\API_MEAN\frontend\src\images" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="880ed667-2829-4076-8660-2614692f5efe" name="Default Changelist" comment="" />
+      <created>1611684655543</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611684655543</updated>
+      <workItem from="1611684656856" duration="6813000" />
+      <workItem from="1611760182255" duration="7050000" />
+      <workItem from="1611774270106" duration="1080000" />
+      <workItem from="1611836592402" duration="7879000" />
+      <workItem from="1612016311036" duration="9636000" />
+      <workItem from="1612097710120" duration="15225000" />
+      <workItem from="1612197225930" duration="18338000" />
+      <workItem from="1612363519839" duration="5494000" />
+      <workItem from="1612369103723" duration="1928000" />
+      <workItem from="1612522141165" duration="5045000" />
+      <workItem from="1612552598699" duration="3258000" />
+      <workItem from="1612616023630" duration="9446000" />
+      <workItem from="1612695616925" duration="25323000" />
+      <workItem from="1612782487260" duration="343000" />
+      <workItem from="1612782850704" duration="14431000" />
+      <workItem from="1612802482314" duration="15201000" />
+      <workItem from="1612866753617" duration="4598000" />
+      <workItem from="1612967418973" duration="15799000" />
+      <workItem from="1613041006005" duration="11597000" />
+      <workItem from="1613060539462" duration="310000" />
+      <workItem from="1613060956104" duration="19269000" />
+      <workItem from="1613121943728" duration="6014000" />
+      <workItem from="1613324221518" duration="1455000" />
+      <workItem from="1615054305528" duration="103000" />
+      <workItem from="1616610443252" duration="2419000" />
+      <workItem from="1622367573537" duration="807000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/frontend/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/IONIC/seriesIonic" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="592" y="237" width="438" height="532" key="FileChooserDialogImpl" timestamp="1622368533385">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="239" y="94" width="438" height="532" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1616613744977" />
+    <state x="592" y="237" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1622368533385" />
+  </component>
+</project>

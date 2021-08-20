@@ -1,0 +1,38 @@
+<style>
+  .customStyleAvatar{
+    display: flex;
+    justify-content: center;
+  }
+
+  .customToolbar{
+
+  }
+</style>
+
+<ion-header class="ion-no-border">
+
+  <ion-toolbar color="dark"> <!-- el toolbar es la barra superior que puede contener mierdas varias -->
+
+    <!-- un botón de back a la izquierda -->
+    <ion-buttons slot="start"> <!-- nuestro elemento boton a la izquierda-->
+      <ion-back-button defaultHref="/"></ion-back-button> <!-- boton de tipo atrás, que cuando le damos siempre va a la anterior, pero si no hay memoria caché vuelve a la ruta indicada en default-href -->
+    </ion-buttons>
+
+    <!-- un LOGO en el centro -->
+    <ion-title>
+      <div class="customStyleAvatar">
+        <ion-avatar>
+          <img src="../../assets/img/pcn.png">
+        </ion-avatar>
+      </div>
+    </ion-title>
+
+    <!-- un Menu a la derecha -->
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<!-- Una vez finalizado el componente, hay que incluirlos en los HTML de las páginas donde quieras que aparezcan -->

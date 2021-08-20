@@ -1,0 +1,19 @@
+<ion-menu side="end" menuId="MenuHeaderCategorias" contentId="menuCategorias">
+
+  <ion-header>
+    <ion-toolbar color="medium">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle *ngFor="let c of CategotiasGenericas | async">
+        <ion-item  [routerLink]="c.redirectTo" detail>
+          <ion-icon slot="start" [name]="c.icon"></ion-icon> <!-- icono -->
+          <ion-label>{{c.name}}</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>

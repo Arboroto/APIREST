@@ -1,0 +1,75 @@
+<style>
+    .resizeImage{
+        width: 100%;
+        height: 60vw;
+        object-fit: cover;
+    }
+
+</style>
+<app-header></app-header>
+<ion-content>
+    <ion-card *ngIf="serie"> <!-- el HTML se carga ANTES que el ngOnInit, o al menos las variables están nulas cuando el html ya s eha cargado
+     , de modo que mediante el *ngIf serie "no es null" consigo que el html solo se muestre una vez cargado, y no me salte error-->
+        <ion-card-title style="text-align: center">{{serie.titulo.toUpperCase()}}</ion-card-title>
+        <ion-slides pager="true">
+            <ion-slide class="resizeImage" *ngFor="let im of serie?.imagenes">
+                <ion-img [src]="im" class="resizeImage"></ion-img>
+            </ion-slide>
+        </ion-slides>
+        <ion-card-content>
+            {{serie.sinopsis}}
+        </ion-card-content>
+
+        <ion-card-subtitle> &nbsp;
+            &nbsp;<b *ngFor="let cat of serie.categorias">{{cat.toUpperCase()}} &nbsp; </b><br/>
+            &nbsp; &nbsp;<a>Año de emisión: {{serie.anyo}} </a> <br/>
+            &nbsp; &nbsp;<a>Número de capitulos: {{serie.capitulos}} </a><br/><br/>
+            <div style="text-align: center">
+            &nbsp; &nbsp;<b>Puntuación de la audiencia:</b><br/>
+            &nbsp; &nbsp;<ion-rating [rate]="puntuacion/divisor" readonly="false" size="small"> </ion-rating>
+            </div>
+        </ion-card-subtitle>
+        <br/>
+    </ion-card>
+
+    <form #formularioPuntuacion="ngForm" (ngSubmit)="enviarFormulario()">
+
+        <ion-list>
+            <ion-item>
+                <ion-label position="floating">Correo</ion-label>
+                <ion-input type="email" name="email" [(ngModel)]="correo" required
+                pattern="^([a-zA-Z0-9_\-\.]+@[a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"></ion-input>
+            </ion-item>
+            <ion-item>
+
+                <ion-range (ionChange)="cambiarRango($event)" min="0" max="5" value="2.5" pin="true" color="success" mode="ios">
+                    <ion-label slot="start">0</ion-label>
+                    <ion-label slot="end">5</ion-label>
+                </ion-range>
+            </ion-item>
+        </ion-list>
+    <ion-button type="sumbit" expand="full" (click)="enviarFormulario()" [disabled]="formularioPuntuacion.invalid"> Enviar puntuación </ion-button>
+    </form>
+
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+        <ion-fab-button size="small">
+            <ion-icon name="share"></ion-icon>
+        </ion-fab-button>
+            <ion-fab-list side="top">
+                <ion-fab-button href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+                <ion-fab-button href="https://twitter.com"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+            <ion-fab-list side="start">
+                <ion-fab-button href="https://www.youtube.com"> <ion-icon name="logo-youtube"></ion-icon> </ion-fab-button>
+                <ion-fab-button href="https://www.instagram.com"> <ion-icon name="logo-instagram"></ion-icon> </ion-fab-button>
+            </ion-fab-list>
+
+    </ion-fab>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+
+    </ion-toolbar>
+</ion-footer>
+

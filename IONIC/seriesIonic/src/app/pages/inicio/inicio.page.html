@@ -1,0 +1,67 @@
+<style>
+    .resizeImage{
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+    }
+
+    .resizeImage2{
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+    }
+
+    .footerStyle{
+        background-color: white;
+        size: 20px;
+    }
+
+    .ion-custom-card{
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+        }
+    .footerPaddingTittle{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+</style>
+
+<app-header titulo="Inicio"></app-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let s of seriesCarga" color="dark">
+            <ion-card mode="ios" class="ion-custom-card" routerLink="/serie-individual" (click)="abrirSerie(s)" >
+                <ion-card-title class="ion-text-center">{{s.titulo}} </ion-card-title>
+                    <ion-slides pager="true">
+                        <ion-slide class="resizeImage" *ngFor="let im of s?.imagenes">
+                            <ion-img [src]="im" class="resizeImage"></ion-img>
+                        </ion-slide>
+                    </ion-slides>
+                <ion-card-content>
+                    {{s.sinopsis}}
+                </ion-card-content>
+
+                <ion-card-subtitle>
+                    &nbsp;<a *ngFor="let cat of s.categorias">{{cat}} &nbsp; </a>
+                </ion-card-subtitle>
+            </ion-card>
+        </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll threshold="150px" (ionInfinite)="cargarSeries($event)">
+        <ion-infinite-scroll-content loading-spinner="dots"></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+</ion-content>
+
+<!--TARJETAS CATEGORIAS CARROUSEL-->
+<ion-footer class="footerStyle" >
+    <ion-slides pager="true" >
+        <ion-slide *ngFor="let c of componentes | async" (click)="abrirCategoria(c.value)">
+            <ion-card-subtitle class="ion-text-center footerPaddingTittle"><h2>{{c.name}}</h2></ion-card-subtitle>
+             <ion-img [src]="c.img" class="resizeImage2"></ion-img>
+        </ion-slide>
+    </ion-slides>
+</ion-footer>
